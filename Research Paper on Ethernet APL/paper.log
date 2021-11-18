@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  11 NOV 2021 13:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.4.28)  18 NOV 2021 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -292,6 +292,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+<fig1.jpg, id=1, 216.81pt x 212.4738pt>
+File: fig1.jpg Graphic file (type jpg)
+<use fig1.jpg>
+Package pdftex.def Info: fig1.jpg  used on input line 45.
+(pdftex.def)             Requested size: 216.80946pt x 212.47327pt.
+ [1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./fig1.jpg>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -303,28 +312,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
+[2
 
 ] (./paper.aux) ) 
 Here is how much of TeX's memory you used:
- 3853 strings out of 478994
- 55477 string characters out of 5862207
- 351987 words of memory out of 5000000
- 21331 multiletter control sequences out of 15000+600000
+ 3861 strings out of 478994
+ 55554 string characters out of 5862207
+ 360995 words of memory out of 5000000
+ 21337 multiletter control sequences out of 15000+600000
  432797 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,8n,74p,228b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,8n,74p,916b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/te
 xlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2021/texmf-d
 ist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on paper.pdf (1 page, 36617 bytes).
+Output written on paper.pdf (2 pages, 765305 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+ 29 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -27,27 +27,42 @@ giuseppe.scalora@stud.hshl.de}
 \maketitle
 
 \begin{abstract}
-This paper will focus on the research about the communication protocol called Ethernet APL or Advanced Physical Layer. Describing how the communication occurs, what are the main instruments and hardware needed in order to make this type of communication possible. The scope of the paper will also cover the difference between the main Ethernet protocol and the APL with a comparison with the other OSI layers used in the communication protocols. Towards the end a couple of main applications will be included in order to understand the focus area of this topic alongside with the benefits and cons which this protocol can deliver.
+This paper will focus on the research about the communication protocol called Ethernet APL or Advanced Physical Layer. Describing how the communication occurs, what are the main characteristics and properties needed in order to make this type of communication a reality. The scope of the paper will also cover the difference between the main Ethernet protocol and the APL with a comparison with the other OSI layers used in the communication protocols. Towards the end some important main applications will be discussed and presented in order to understand the focus area of this topic alongside with the benefits and cons which this protocol can deliver.
  
 \end{abstract}
 
 \begin{IEEEkeywords}
-
+Ethernet, communication protocols, APL, OSI layers
 \end{IEEEkeywords}
 
 \section{Introduction}
+When it comes to automation networks, many challenging requirements make their appearance in the process industries. Applications of such type require continuous and stable operations working 24/7, alongside with reliability and the proper managements of thousands of signals. Then, another important factor to consider, is the usage within hazardous environments, areas in which atmosphere can be flamable or explosive, which are common in process industries. Standard Ethernet, therefore, is not considered an intrinsically safe standard for hazardous environments and a new standard had to be developed. This new standard being a newly technological Advanced Physical Layer, which will enable a much improved safety in the already existing Ethernet standard. Ethernet APL is a new standard proposed on June, 2021. As of what said, it is important to understand how new this technology is in the field.
 
-
-
-\section{History of Ethernet}
 
 \section{Motivation}
+Nowadays process plants are seeking for an efficient engineering, fast commissioning and reliable production. The only mean to allow this is the combination of an interoperable work between industy 4.0 and the digital transformation, these allow for a higher potential which would reinforce the variables mentioned just before. The main porblems to solve being accordingly, low bandwidth, speed and/or laborious protocol conversion among the communication protocols. Therefore Ethernet APL is there to solve fill these lackings and provide an efficient digitalization on field technologies. Field devices will then be provided with enhanced connectivity, with no longer present distance and cabling problems. An insight of a possibility of having data analysis and productivity improvements is shown in Figure 1 below.\cite{b1}
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=1.0]{fig1.jpg}}
+    \caption{Overview on communication step through Ethernet APL \cite{b1}}
+    \label{comm}
+\end{figure}
+
+ Ethernet APL as the name itself suggests, is based upon the classical ISO OSI layer, more specifically it is another one of the already known physical layers, more of this in the next sections. 
+
+\section{State of the art}
+\subsection{History of the Ethernet}
+It was May 22, 1973, at Xerox Palo Alto Research Center. Bob Metcalfe started drafting the description of how an Ethernet network system, he himself invented, should work. The main principle being the interconnectivity between computing workstations and the sending of informations between computers and laser printers. This was considered as one of the best inventions at PARC, being the first high-speed LAN technology of communication. The usage of Ethernet has been a revolution in the world of technologies. Allowing for a better and improved information sharing between applications, Ethernet has become the most used internet communication protocol used throughout all the main corporations and even in domestic private use. \cite{b2}
+\subsection{OSI Layer}
 
 
-\section{OSI-Layer}
+\section{Ethernet Advanced physical layer}
+The advanced physical layer Ethernet-APL brings standardized Ethernet technology and its advantages to the field of process plants. The leading standardization organizations are working together with major industry partners of process industries to specify one single physical layer that meets the requirements of process automation. Ethernet-APL is designed to support various topologies including redundancy concepts to ensure flexibility according to the needs of a process plant.
+\subsection{Main characteristics}
+10 Mbps communication over a single twisted pair cable for long reach as defined in IEEE 802.3cg-2019, short 10BASE-T1L
 
-\section{Advanced physical layer}
+Explosion protection with intrinsic safety for hazardous zones as defined in IEC TS 60079-47 (2-WISE = 2-Wire Intrinsically Safe Ethernet)
 
+APL Port Profiles for definition of multiple power levels between power source and power load and required cable characteristics (preferred: fieldbus cable type A) and connection technology (screw terminals, spring terminals, M12 connectors)
 \section{Main Applications}
 
 \section{Conclusion}
@@ -57,7 +72,7 @@ This paper will focus on the research about the communication protocol called Et
 
 \begin{thebibliography}{00}
 \bibitem{b1} 
-\bibitem{b2} 
+\bibitem{b2} C. Spurgeon, Ethernet. Beijing: O'Reilly, 2009.
 \bibitem{b3} 
 \bibitem{b4} 
 \bibitem{b5} 
