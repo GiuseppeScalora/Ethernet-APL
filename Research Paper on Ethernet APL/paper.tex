@@ -53,8 +53,31 @@ Nowadays process plants are seeking for an efficient engineering, fast commissio
 \subsection{History of the Ethernet}
 It was May 22, 1973, at Xerox Palo Alto Research Center. Bob Metcalfe started drafting the description of how an Ethernet network system, he himself invented, should work. The main principle being the interconnectivity between computing workstations and the sending of informations between computers and laser printers. This was considered as one of the best inventions at PARC, being the first high-speed LAN technology of communication. The usage of Ethernet has been a revolution in the world of technologies. Allowing for a better and improved information sharing between applications, Ethernet has become the most used internet communication protocol used throughout all the main corporations and even in domestic private use. \cite{b2}
 \subsection{OSI Layer}
+In order to understand what the OSI layer are and how they are defined, it is important to learn how why is it needed. The Open Systems Interconnect (OSI) model is a conceptual framework which describes communication or networking between systems, properly divided into seven layers, as to each belong an own function. The division into layers is needed to help the realisation of a communication network, with well defined levels it is made easier to find problems and understand better what is going on in a specific area of the network. The vendors in this field will always make sure to specify in which exact layer their products belong. As to the classification, it will be discussed in the following subsections.
+Since the main concern of this research is to investigate and discuss in details the Physical layer or also called OSI Layer 1, the listing will start from top to bottom. The picture below will better describe and show the layers.
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.45]{OSI-Model.png}}
+    \caption{OSI layers \cite{b3}}
+    \label{osi}
+\end{figure}
 
-
+\subsubsection{Application Layer}
+Starting from layer 7, the so called application layer, is the layer which gets the closest in touch with the end-user, for example by displaying and storing information which have to be sent through a display or a communication mean. The user interacts with the software and processes of synchronisation and exchange of data but it does not touch directly the application itself. Examples of this include Web Browsers such as Firefox or Chrome, which display web pages through HTTP communication, or TelNet. 
+\subsubsection{Presentation Layer}
+The presentation layer or layer 6 is where encapsulation, encryption and decryption of data happen. It creates a communication bridge between network and application via proper translation of data. Also called syntax layer because it makes sure that an independence between data representation and data translation is present. Example of this is the conversion from and to a data structure file of XML type.
+\subsubsection{Session Layer}
+The layer 5, as the name suggests already, creates and handles a session between two or more computers. It provides the capability of checkpointing, recovery, resuming and terminating a session, functions commonly used in internet protocols such as TCP. Its implementation is performed mostly by using remote procedure calls which allow the programmer to execute processes on a remote machine, triggered by the machine being in used.
+\subsubsection{Transport Layer}
+The transport layer manages the exchange and transmission of data sequences  with variable lengths between a source and a destination host. It thoroughly controls over the transmission making sure that the processes of segmentation and desegmentation occur properly. If some data has not been delivered correctly, it is the job of the transport layer to make sure that that portion of data gets recovered and then redelivered correctly. In our everyday´s life we can see the transport layer being applied to the UDP or TCP internet ports, entities which can allow or not allow the transmission of data through them. 
+\subsubsection{Network Layer}
+If the transport layer deals then with ports in UDP and TCP protocols, the network layer handles the IP addresses of a network. It pratically deals with the main router functionalities and communication between routers. If there is an ingoing or outgoing connection from a router to a server, the first has to make sure that the sending and receiving of packets gets executed and routed using the most feasible and efficient track/route among the millions available in the distributed system.
+\subsubsection{Data Link}
+The layer 2, processes the transmission and node to node communication. Working on top of the physical layer, can detect and correct errors which can occur in the latter. The data link layer is a bit of an exception compared to the others, as it possesses two sublayers the MAC or Media Access Control and the LLC, logical link control. 
+The MAC is responsible to allow the access to the media, working in form of centralized or distributed control. Both handling the communication between nodes. The MAC specifically handles the frame synchronization which is responsible to determind the start and end of a bitstream transmission. 
+The LLC, on the other hand, multiplexes the running protocols of the data link layer and determines the mechanisms used for addressing and controlling the communication exchange between sending and recipient machine.
+\subsubsection{Physical Layer}
+The physical layer is where the electrical conversion happens. The streams of raw data gets converted from digital to electrical or radio signals. Within the specifications of the layer, voltage levels, impedances, pin layouts, frequency, cable construction parameters and timing are almost always present. Technically the physical layer is nonetheless the physical representation of the system. Bluetooth, Ethernet and USB are standards examples of the Physical layer.
+\cite{b4}\cite{b5}
 \section{Ethernet Advanced physical layer}
 The advanced physical layer Ethernet-APL brings standardized Ethernet technology and its advantages to the field of process plants. The leading standardization organizations are working together with major industry partners of process industries to specify one single physical layer that meets the requirements of process automation. Ethernet-APL is designed to support various topologies including redundancy concepts to ensure flexibility according to the needs of a process plant.
 \subsection{Main characteristics}
@@ -73,9 +96,9 @@ APL Port Profiles for definition of multiple power levels between power source a
 \begin{thebibliography}{00}
 \bibitem{b1} 
 \bibitem{b2} C. Spurgeon, Ethernet. Beijing: O'Reilly, 2009.
-\bibitem{b3} 
-\bibitem{b4} 
-\bibitem{b5} 
+\bibitem{b3} https://www.educba.com/what-is-osi-model/
+\bibitem{b4} https://www.networkworld.com/article/3239677/the-osi-model-explained-and-how-to-easily-remember-its-7-layers.html
+\bibitem{b5} https://en.wikipedia.org/wiki/OSI_model
 \bibitem{b6} 
 \bibitem{b7} 
 \bibitem{b8} 
