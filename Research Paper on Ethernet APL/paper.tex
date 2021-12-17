@@ -79,31 +79,80 @@ The LLC, on the other hand, multiplexes the running protocols of the data link l
 The physical layer is where the electrical conversion happens. The streams of raw data gets converted from digital to electrical or radio signals. Within the specifications of the layer, voltage levels, impedances, pin layouts, frequency, cable construction parameters and timing are almost always present. Technically the physical layer is nonetheless the physical representation of the system. Bluetooth, Ethernet and USB are standards examples of the Physical layer.
 \cite{b4}\cite{b5}
 \section{Ethernet Advanced physical layer}
-The advanced physical layer Ethernet-APL brings standardized Ethernet technology and its advantages to the field of process plants. The leading standardization organizations are working together with major industry partners of process industries to specify one single physical layer that meets the requirements of process automation. Ethernet-APL is designed to support various topologies including redundancy concepts to ensure flexibility according to the needs of a process plant.
+Ethernet APL is considered to be a subset of the common standardized communication protocol, Ethernet. Ethernet-APL brings all the standardized Ethernet technology to the table, alongside with all its advantages and even more. This results in being very helpful in the application for process plants or industrial processes. As Ethernet APL makes sure that long distance communication occurs in the most qualitative possible way. Working alongside major organizations, the process industries were brought to the point of specifying one single physical layer which could also be applied and satisfies the requirements of process automation together with providing connectivity with broadly distributed, two-wire, loop-powered field instruments in potentially hazardous environments. APL reached a significant achievement which comes with an increased available bandwidth for digital communication, simplifying the typical network architecture. Based on Ethernet, as already mentioned, APL improves and facilitates cybersecurity and it also eliminates the need of converting the communication protocol from field device to business systems or to the cloud, wrapping the communication in an all-in-one protocol. Therefore as an introduction for the Ethernet APL, we can obviously state that, as a subset of the traditional Ethernet, its main area of focus is process automation, IoT communication protocols, control systems and safety in hazardous areas.
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.45]{Field-commAPL.png}}
+    \caption{Overview of field communication using APL \cite{b6}}
+    \label{fca}
+\end{figure}
+\subsection{Standards of APL}
+IEEE recently approved a new standard called 802.3cg-2019 or 10BASE-T1L, which basically extends the normal Ethernet standard 802.3 up to the inclusion of wiring a single pair over a long distance of up to 1000, which can also allow supplying power to the field devices. Now according to these technical standards and in order to approve the concept of APL and its usage in process plants, some extended standards need to be defined. Thus, with the advent of APL now the 10BASE-T1L standard has been extended furthermore especially for usage in hazardous areas.
+Ethernet APL standards will define port profiles for various power levels, in order to be used in and outside hazardous areas. This makes sure that the interoperability of APL switches and devices is not compromised and that power delivery will replace the optional power data line already within the 10BASE-T1L standard.
+APL will deliver power to the devices much safer intrinsically compared to other famous communication protocols such as Profibus or HART. As supported by the executive vice president of Pepperl+Fuchs, Michael Kessler, this leads in a change of wiring construction which will now allow for the design of two wired instruments instead of the traditional four wires, due to high power.
+Another important standardization concerns the field of ASIC, application specific integrated circuits. Before the APL can enter the market as a commercializable option, ASIC need to be able to support APL and all its characteristics. \cite{b6}
+
+
 \subsection{Main characteristics}
-10 Mbps communication over a single twisted pair cable for long reach as defined in IEEE 802.3cg-2019, short 10BASE-T1L
+To dive in deeper into the specifics. Ethernet APL makes use of a two-wired instrinsically safe technology. Now, taking a look at Fig.3, we can see how a field installation of APL looks like, having two separate big segments called zones and divisions. With a structure based upon trunk and spur installations let us take a look at the difference between the two of them. Two segments include accordingly trunk and spur lines. Trunk lines deliver power to the field switches for up to 1000 meters while spur lines deliver signals up to 200 meters to the field devices or instruments. At the end of each trunk line there are APL field switches which provide for up to 60 Watts of power and multiple connections with up to 50 devices, on the other hand, anchored to the spur lines are the part of the switches which the communication signals to all the devices. An example of how the trunk/spur wiring looks like, is shown below.
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=90mm, height=40mm, scale=0.5]{trunkspur.jpg}}
+    \caption{Trunk and spur wired connection example \cite{b7}}
+    \label{trsp}
+\end{figure}
 
-Explosion protection with intrinsic safety for hazardous zones as defined in IEC TS 60079-47 (2-WISE = 2-Wire Intrinsically Safe Ethernet)
+Specifically for Ethernet APL there are two types of switches. The field switch, which receives power from the trunk lines in zone 1/Div. 2 and which holds the following characteristics (For a better understanding please take a look at the zones/divisions in Fig.3):
+\begin{enumerate}
+\item Intrinsically safe outputs for spur lines.
+\item Instruments in Zone 0/Div. 1.
+\item Field installations in Zone 1/Div. 2.
+\end{enumerate}
 
-APL Port Profiles for definition of multiple power levels between power source and power load and required cable characteristics (preferred: fieldbus cable type A) and connection technology (screw terminals, spring terminals, M12 connectors)
-\section{Main Applications}
+Other than field switches, guided DIN switches are also present within an APL installation. These instead connect the spur lines to the Ethernet installation. They hold the following specfics:
+\begin{enumerate}
+\item Power supply and communication over spur lines.
+\item Installations in Zone 2/Div. 2.
+\item Outer powering from outer source.
+\item Redundancy support on Ethernet plant level.
+\end{enumerate}
 
+In a typical APL installation there is also a third switch called power switch, as the word already suggests, this switch is present at the beginning of the trunk line and makes sure to supply power to the trunk line from a control station and it is directly connected to the Ethernet APL network.
+Moving on in terms of communication, Ethernet APL provides for up to 10 Mbps, in full duplex mode, through lines of up to 1000 meters long which makes it one of the most efficient and fastest ways of communications for long distances on a two wired pair of cables and for a switched type of network.
+The characteristics of a typical APL network, render the field perfect for scalability in terms of devices and switches connected to the network. Since the ethernet APL is suitable for transportation of higher level layers functions it holds some particularly useful related characteristics, such as automatic detection of neighborhood switches which helps the device exchanges, parallel multiple connections communicating at the same time and fully operable by the user without compromising the efficiency and last but not least possessing ring redundancy and resilience makes sure that the communications are automatically re-routed in case of faults or interruptions at trunk or spur level.
+The last important factor which is to be taken into consideration when talking about APL`s main characteristics is the type of connections and connectors used. Starting with the cables, the ones used in an APL network are compliant with the standard IEC 61158-2, Type A, 100 Ohm resistance and intrinsically safe, which are also the already used standard ones for fieldbus. Also the standard IEC TS 60079-47 (2-Wire Intrinsically Safe Ethernet) provides a high protection and safety against explosions and hazards. The connections between wires are polarity independent, which helps avoiding errors during installations and the physical connections occur in a very simplistic way using only Spring-clamp type of terminals, screw type and M8 and M12 connectors. Typical APL cables and connectors would look like the following.\cite{b8}
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.20]{connectors.png}}
+    \caption{Connectors for APL network \cite{b9}}
+    \label{conn}
+\end{figure}
+The standards used for the connection types deliver a simple and fast way of migrating the installation to a different type of communication if it would be needed to.
+\subsection{Ethernet APL against the world}
+To understand the advantages of the adoption of APL against the competitors, a small table is shown below with the main characteristics among 4 different types of protocols.
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.40]{table.png}}
+    \caption{Comparison table between protocols \cite{b8}}
+    \label{table}
+\end{figure}
+Now, let us analyze the table. APL results to be the fastest in terms of communication through long distances and the most feasible one for instrinsically safe scenarios with the possession of construction technologies equal to the fieldbus technology but with the advantage of having single network technology from field to enterprise and an always present polarity independence.
+\section{APL application challenges}
+Some challenges of APL application appear when it comes to field devices protections. The ability to write on a device should be selectable via means of software or hardware and routine tests should allow the deactivation of the writing protections. This still looks like an ideal solution to which a solution has to be given. Next up on the list regards the field devices having to be unified for the current standards of the plant. Since plants have a longer lifetime compared to field devices, these last ones have to comply to the plants standard even when being updated and improved without causing faults or disrupting functionalities. In short, compatibility problems have to be fixed in order to have a fully unified installation. Lastly, the costs of an APL installation with its advanced technologies must justify for the use of at least 80\% of APL devices in the installation to not render the costs too expensive proportioned to its realization.\cite{b10}
+\section{Main applications}
 \section{Conclusion}
 
 
 
 
 \begin{thebibliography}{00}
-\bibitem{b1} 
+\bibitem{b1} https://www.analog.com/en/thought-leadership/ethernet-apl-optimization-of-process-automation.html
 \bibitem{b2} C. Spurgeon, Ethernet. Beijing: O'Reilly, 2009.
 \bibitem{b3} https://www.educba.com/what-is-osi-model/
 \bibitem{b4} https://www.networkworld.com/article/3239677/the-osi-model-explained-and-how-to-easily-remember-its-7-layers.html
-\bibitem{b5} https://en.wikipedia.org/wiki/OSI_model
-\bibitem{b6} 
-\bibitem{b7} 
-\bibitem{b8} 
-\bibitem{b9} 
-\bibitem{b10}
+\bibitem{b5} https://en.wikipedia.org/wiki/OSI\_model
+\bibitem{b6} https://www.controlglobal.com/articles/2020/advanced-physical-layer-standard-to-make-field-level-ethernet-a-reality/
+\bibitem{b7} https://www.pepperl-fuchs.com/italy/it/41850.htm
+\bibitem{b8} https://static1.squarespace.com/static/5c33ae96f407b4bfc5884978/t/60c7ef3a4807d14ca771825d/1623715647354/Ethernet-APL\_Ethernet-To-The-Field\_EN\_FINAL\_June-2021.pdf
+\bibitem{b9} https://www.automationworld.com/communication/article/21545085/industrial-ethernet-advances-broaden-the-networks-value-across-industries
+\bibitem{b10} Whitepaper Ethernet-APL in the Field for
+high-availability Safety Applications
 \end{thebibliography}
 
 \end{document}
